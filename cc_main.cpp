@@ -56,7 +56,7 @@ int main(int argc, char*argv[])
 
 
            if (ligne_s.compare("pixeliser") == 0){
-                Pixeliser P("image.bmp",N);
+                Pixeliser P("image.bmp",N,30);
            }
 
           compt++;
