@@ -41,7 +41,7 @@ public:
         }
         for(auto & t : threads)
             t.join();
-        bmp.save_image("sortie.bmp");
+        bmp.save_image("sortiegris.bmp");
     }
 
 };
