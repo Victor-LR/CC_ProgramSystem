@@ -11,6 +11,7 @@
 #include "convertgris.cpp"
 #include "convertirbmp3.cpp"
 #include "cc_pixeliser.cpp"
+#include "premiers.cpp"
 
 using namespace std;
 
@@ -62,6 +63,10 @@ int main(int argc, char*argv[])
 
            if (ligne_s.compare("pixeliser") == 0){
                 Pixeliser P("image.bmp",N);
+           }
+
+           if (ligne_s.compare("premiers") == 0){
+                Premiers prem(5,10,N);
            }
 
           compt++;
