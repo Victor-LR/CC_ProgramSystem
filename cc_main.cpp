@@ -7,12 +7,13 @@
 #include <algorithm>
 #include <fstream>
 #include "bitmap_image.hpp"
+#include "convertgris.cpp"
 
 using namespace std;
 
 int main(int argc, char*argv[])
 {
-    int N = std::atoi(argv[1]);
+    unsigned int N = std::atoi(argv[1]);
 
     const char * ligne_c;
     string ligne_s;
@@ -47,7 +48,7 @@ int main(int argc, char*argv[])
            }
 
            if (ligne_s.compare("convertirgris") == 0){
-
+                ConvertGris G("image.bmp",N);
            }
 
           compt++;
