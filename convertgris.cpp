@@ -17,7 +17,7 @@ public:
         convertirgris(filename,N);
     };
 
-    void changegris(bitmap_image & bmp, unsigned int l1, unsigned int l2){
+    void static changegris(bitmap_image & bmp, unsigned int l1, unsigned int l2){
         unsigned int cs2=bmp.width();
         for (auto l=l1;l<=l2;l++) {
             for (unsigned int c=0;c<=cs2;++c) {
