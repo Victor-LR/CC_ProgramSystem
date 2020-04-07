@@ -38,8 +38,8 @@ public:
             pid_t pid=fork();
             if (pid == 0)
             {
-                unsigned long i1=i*(x+1/p)+1;
-                unsigned long i2=(i+1)*(x+y/p);
+                unsigned long i1=i*((x+y)/p)+1;
+                unsigned long i2=(i+1)*((x+y)/p);
                 if (i == (p-1))
                     i2=x+y;
                 close(piperesultats[LECTURE]);
