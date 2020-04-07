@@ -6,7 +6,7 @@
 #include <sys/wait.h>
 #include <algorithm>
 #include <fstream>
-#include "test.cpp"
+#include "bitmap_image.hpp"
 
 using namespace std;
 
@@ -47,7 +47,7 @@ int main(int argc, char*argv[])
            }
 
            if (ligne_s.compare("convertirgris") == 0){
-               exit(0);
+
            }
 
           compt++;
