@@ -10,6 +10,7 @@
 #include "bitmap_image.hpp"
 #include "convertgris.cpp"
 #include "convertirbmp3.cpp"
+#include "cc_pixeliser.cpp"
 
 using namespace std;
 
@@ -30,7 +31,7 @@ int main(int argc, char*argv[])
         while( compt < 100) {
            printf("MonShell> ");
            std::cin >> ligne_s;
-          // ligne_c = ligne_s.c_str();
+           ligne_c = ligne_s.c_str();
 
            argu[0] = (char*) ligne_c;
 
@@ -46,7 +47,8 @@ int main(int argc, char*argv[])
                wait(NULL);
 
            if (ligne_s.compare("quitter") == 0){
-               exit(0);
+                exit(0);
+               return 0;
            }
 
            if (ligne_s.compare("convertirgris") == 0){
@@ -55,6 +57,11 @@ int main(int argc, char*argv[])
 
            if (ligne_s.compare("convertirbmp3") == 0){
                 ConvertBMP3 B("Illustration_campus_sciences2.jpg","toto.bmp");
+           }
+
+
+           if (ligne_s.compare("pixeliser") == 0){
+                Pixeliser P("image.bmp",N);
            }
 
           compt++;
