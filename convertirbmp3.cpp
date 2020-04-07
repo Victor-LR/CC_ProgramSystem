@@ -18,7 +18,8 @@ public:
     };
 
          void convertirBMP3(std::string entree,std::string sortie){
-            std::string str ="convert " + entree + "BMP3:" + sortie;
+            std::string str ="convert " + entree + " BMP3:" + sortie;
+            std::cout << str <<std::endl;
              const char *command =str.c_str();
             system(command);
 	 }

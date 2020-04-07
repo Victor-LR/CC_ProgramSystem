@@ -29,8 +29,6 @@ class Pixeliser {
                         bmp.set_pixel(c+i,l,r1,g1,b1);
                     }
                 }
-                //unsigned char total = (r1+g1+b1)/3;
-                //bmp.set_pixel(c,l,r2,g2,b2);
             }
         }
     }
@@ -47,7 +45,7 @@ class Pixeliser {
         }
         for (auto & t : threads)
             t.join();
-        bmp.save_image("result.bmp");
+        bmp.save_image("sortiepixel.bmp");
 
     }
 };

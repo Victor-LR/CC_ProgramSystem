@@ -56,11 +56,11 @@ int main(int argc, char*argv[])
            }
 
            if (ligne_s.compare("convertirbmp3") == 0){
-                ConvertBMP3 B("Illustration_campus_sciences2.jpg","toto.bmp");
+                ConvertBMP3 B("Illustration_campus_sciences2.jpg","image.bmp");
            }
 
-
            if (ligne_s.compare("pixeliser") == 0){
+                ConvertBMP3 B2("Illustration_campus_sciences2.jpg","image.bmp");
                 Pixeliser P("image.bmp",N,30);
            }
 
