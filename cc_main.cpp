@@ -9,6 +9,7 @@
 #include <thread>
 #include "bitmap_image.hpp"
 #include "convertgris.cpp"
+#include "convertirbmp3.cpp"
 #include "cc_pixeliser.cpp"
 
 using namespace std;
@@ -52,6 +53,10 @@ int main(int argc, char*argv[])
 
            if (ligne_s.compare("convertirgris") == 0){
                 ConvertGris G("image.bmp",N);
+           }
+
+           if (ligne_s.compare("convertirbmp3") == 0){
+                ConvertBMP3 B("Illustration_campus_sciences2.jpg","toto.bmp");
            }
 
 
